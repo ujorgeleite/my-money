@@ -1,0 +1,26 @@
+{
+  "name": "my-money",
+  "version": "1.0.0",
+  "description": "This project read a xlsx file from schema in command line, and export this data in output api in a json format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ujorgeleite/my-money.git"
+  },
+  "keywords": [
+    "node-js",
+    "financial-api",
+    "files",
+    "money",
+    "javascript"
+  ],
+  "author": "Jorge Leite",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ujorgeleite/my-money/issues"
+  },
+  "homepage": "https://github.com/ujorgeleite/my-money#readme"
+}

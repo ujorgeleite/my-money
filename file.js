@@ -1,5 +1,5 @@
 const readXlsxFile = require('read-excel-file/node');
-const schema = require('./fileSchema')
+const schema = require('./Models/fileSchema')
 
 class File {
 

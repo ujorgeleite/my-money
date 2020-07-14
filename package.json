@@ -27,6 +27,7 @@
     "mocha": "^8.0.1"
   },
   "dependencies": {
+    "exceljs": "^4.1.0",
     "read-excel-file": "^4.0.6"
   }
 }

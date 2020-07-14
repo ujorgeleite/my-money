@@ -4,11 +4,10 @@ const schema = require('./Models/fileSchema')
 class File {
 
     constructor() {
-        this.fileName = "planilha.xlsx"
     }
 
-    async getFile() {
-        const file = await readXlsxFile(this.fileName, { schema })
+    async getFile(fileName) {
+        const file = await readXlsxFile(fileName, { schema })
         return file
     }
 

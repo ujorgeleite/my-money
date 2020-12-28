@@ -7,10 +7,6 @@ const schema = {
         prop: 'valor',
         type: Number
     },
-    'Vencimento': {
-        prop: 'vencimento',
-        type: Number
-    },
     'Pago': {
         prop: 'pago',
         type: String

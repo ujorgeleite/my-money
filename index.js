@@ -18,12 +18,22 @@ const rodar = async () => {
     console.log(`A execução do arquivos vai começar em ${multipolicadorTempoExecucao} segundos, aguarde....`)
 
     setTimeout(async () => {
-        fileNames.map(async(name) => {
+        fileNames.map(async (name, index) => {
+
             const arquivo = await file.getFile(name)
-            console.log('name => ', name)
-            console.log('arquivo => ', arquivo)
+
+            if (!!arquivo.errors) {
+                console.log(`Erro ao tentar ler o arquivo ${name}`)
+            } else {
+
+                console.log('leu o arquivo => ', name)
+                //console.log('arquivo => ', arquivo)
+            }
+
+
+
         })
-        
+
     }, tempoDeExecucao)
 
 }

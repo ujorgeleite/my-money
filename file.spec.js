@@ -75,7 +75,7 @@ describe('File Spec', () => {
               valorPago: 56 } ],
          errors: [] }
 
-        const result = await file.getFile();
+        const result = await file.getFile('planilha_light.xlsx');
         
         deepEqual(result, expected)
     });

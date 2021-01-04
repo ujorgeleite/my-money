@@ -1,9 +1,11 @@
 const mapIncomes = require('./mapIncomes'),
-    mapTotalIncomes = require('./mapTotalIncomes')
+    mapTotalIncomes = require('./mapTotalIncomes'),
+    mapCell = require('./mapCell')
 
 
 
-export default {
+module.exports =  {
     mapIncomes,
-    mapTotalIncomes
+    mapTotalIncomes,
+    mapCell
 }

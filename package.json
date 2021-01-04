@@ -4,7 +4,8 @@
   "description": "This project read a xlsx file from schema in command line, and export this data in output api in a json format.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive *.spec.js **/*.spec.js "
+    "test": "mocha --recursive *.spec.js **/*.spec.js ",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -24,10 +25,10 @@
   },
   "homepage": "https://github.com/ujorgeleite/my-money#readme",
   "devDependencies": {
-    "mocha": "^8.0.1"
+    "mocha": "^8.2.1"
   },
   "dependencies": {
-    "exceljs": "^4.1.0",
-    "read-excel-file": "^4.0.6"
+    "exceljs": "^4.1.1",
+    "read-excel-file": "^5.0.0"
   }
 }

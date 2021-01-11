@@ -33,9 +33,6 @@ const mapRows = async (sheet) => {
 
 const mapCells = async (row, indexRow, sheet) => {
   const valueRows = [];
-
-  //se index row igual a 1 olha o valor da primeira celula dela e se for formula nao deve inserir o valor
-
   await row.eachCell((cell, cellNumber) => {
     if (isValidCell(row, indexRow, cellNumber, sheet)) {
       const cellCopy = row.getCell(cellNumber);
@@ -61,7 +58,7 @@ const isValidCell = (row, indexRow, cellNumber, sheet) => {
   }
 };
 
-const run = async () => {
+const breakInMultipleFiles = async () => {
   let filenames = [];
   const file = await workbook.xlsx.readFile("planilha.xlsx");
 
@@ -71,4 +68,4 @@ const run = async () => {
   return filenames;
 };
 
-module.exports = { run };
+module.exports = { breakInMultipleFiles };

@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "exceljs": "^4.1.1",
-    "read-excel-file": "^5.0.0"
+    "read-excel-file": "^5.0.0",
+    "xlsx-chart": "^0.4.2"
   }
 }
